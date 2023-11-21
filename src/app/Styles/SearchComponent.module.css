@@ -78,6 +78,9 @@ position: relative;
     width: 21.94vw; 
     min-width: 13.125rem; 
     min-height: 3.625rem !important;
+    
+    max-height: 4rem; 
+    
     padding: 1rem; 
     margin: 1rem auto; 
     display: flex; 
@@ -103,6 +106,8 @@ position: relative;
     
     outline: 2px solid lime; 
     margin: 0 auto; 
+    color: black; 
+    
     
     
 }
@@ -130,6 +135,9 @@ position: relative;
     
     outline: 2px solid lime; 
     margin: 0 auto; 
+    
+    color: black; 
+    
     
 }
 

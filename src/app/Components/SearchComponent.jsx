@@ -1,11 +1,37 @@
 'use client'
-import React from 'react'
+import {useState, useEffect, useCallback, useRef} from 'react'
 import sc from '../Styles/SearchComponent.module.css'; 
+import Dropdown from '../Components/Dropdown'; 
+import MuiDropDown from '../Components/MuiDropDown'; 
+import RangeDatePicker from '../Components/RangeDatePicker'; 
+import Slider from '../Components/DiscreteSlider'; 
+
+import DropDown from '../Components/Dropdown'; 
 
 
 
+
+
+/** 
+
+Types of Search Parameters: 
+1. Price Range Two Text Inputs 
+2. Brands Drop Down check box menu 
+3. Age Two Calendar Selectors 
+4. Distance Range Slider 
+5. Condition Drop down check box menu with the option for any type of condition. 
+
+
+*/
 
 function SearchComponent() {
+
+const [minPrice, setMinPrice] = useState(""); 
+const [maxPrice, setMaxPrice] = useState(""); 
+
+
+
+
   return (
     <div id={sc.mainContainer}>
     <div id={sc.subContainer} >
@@ -19,9 +45,6 @@ function SearchComponent() {
     <div id={sc.titleSection} >
     
     Search for Deals 
-    
-    
-    
     </div>
     
 
@@ -40,9 +63,11 @@ function SearchComponent() {
     {/* Add in the button here  */}
     {/* Add in two input text buttons  */}
     
-    <div id={sc.maxButtonContainer} >
-    <input type='text' id={sc.minInput} label='minPrice' placeholder='min' /> 
-    
+    <div id={sc.minButtonContainer} >
+    <input type='text' id={sc.minInput} 
+    label='minPrice' placeholder='min' 
+    onChange={(input) => setMinPrice(minPrice)} /> 
+
 
     </div>
     <span id={sc.toSpan} >
@@ -52,52 +77,35 @@ function SearchComponent() {
     
     <div id={sc.minButtonContainer} >
     
-    <input type='text' id={sc.maxInput} label='maxPrice' placeholder='max' /> 
+    <input type='text' 
+    id={sc.maxInput} 
+    label='maxPrice' placeholder='max' 
+    onChange={(input) => setMaxPrice(maxPrice)} /> 
 
-    
     </div>    
     
     </div>
-    <div id={sc.buttonContainer} >
+    <div id={sc.buttonContainer}  >
     
-    
-    {/* Add in the button here  */}
-    <button>
 
-        Find a deal 
-        
-        
 
-    </button>
-    
+    <RangeDatePicker/> 
     
     </div>
     <div id={sc.buttonContainer} >
     
     
     {/* Add in the button here  */}
-    <button>
+    <DropDown/> 
 
-        Find a deal 
-        
-        
-
-    </button>
     
     
     </div>
     <div id={sc.buttonContainer} >
-    
-    
-    {/* Add in the button here  */}
-    <button>
+      
+      
+    <Slider/> 
 
-        Find a deal 
-        
-        
-
-    </button>
-    
     
     </div>
     <div id={sc.buttonContainer} >
