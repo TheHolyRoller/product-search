@@ -5,6 +5,7 @@ import Dropdown from '../Components/Dropdown';
 import MuiDropDown from '../Components/MuiDropDown'; 
 import RangeDatePicker from '../Components/RangeDatePicker'; 
 import Slider from '../Components/DiscreteSlider'; 
+import ConditionSelector from '../Components/ConditionSelector'; 
 
 import DropDown from '../Components/Dropdown'; 
 
@@ -112,13 +113,8 @@ const [maxPrice, setMaxPrice] = useState("");
     
     
     {/* Add in the button here  */}
-    <button>
-
-        Find a deal 
-        
-        
-
-    </button>
+   <ConditionSelector/> 
+   
     
     
     </div>
