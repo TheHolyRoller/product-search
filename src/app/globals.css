@@ -1,3 +1,141 @@
+/* 
+
+
+Okay so let's just talk things through. First of all I need to have a clear idea of what I'm making and a clear idea of what the ui will look like in order to start. So there are a 
+few ideas for this first of all I can look on facebook market place and take a screen shot. 
+
+Then I can look on other websites like booking websites and websites where you can 
+customize your search. I'll find the name of the components involved and then 
+get some examples from that and then I might look into find a free template 
+for that and then customizing it and simplifying it. 
+
+Then once the UI has been coded up then I can focus on sorting out the permissions 
+and then I can start a connection with the api and then I can create the filters 
+
+for the JSON queries and then I can create the web hook system for getting real time 
+updates and I can create the system for multiple queries that will run in parallel 
+then I can create the websocket system for real time updates and then I can 
+create the email system and setup the smtp server to send email notifications 
+and then once that is done then I can create the functionality in the UI to 
+display the information and then I can organize this information. 
+
+
+Okay so that sounds good time to look at booking websites and other marketplaces. 
+
+Okay so let's list out the search parameters that need to be added. 
+
+Okay so there's the brand of the vehicle. And maybe one could even search 
+for multiple brands. 
+
+Then there is the search radius. 
+
+Then there is the age of the vehicle. 
+
+This could be a range. 
+
+Then there is the condition of the vehicle. This could be a multiple selection 
+in order to get some what of a range. 
+
+Okay so those are the search filters that need to be applied. 
+
+
+
+Okay so the plan for the UI now is to create a UI component 
+
+Modeled after the Emirates Search filter component and then add in all the 
+
+interactive functionality to that. 
+
+Then when I've done that I can add in the Cards as well as the Navbar, Footer 
+and Hero Section. As well as CTA Section. 
+
+Those components are already made for the most part so I'll need to style 
+them and then change them according to the requirements. 
+
+Then once that is done then I can work on creating a connection to the facebook 
+API and then move through all the steps of creating the functional components. 
+
+Then I can even add some pre-made functional components later. 
+
+
+Then after that I can have a shot at adding in some moonshot 
+features later. 
+
+Okay so let's talk things through. 
+
+First of all I have quite a clear idea of what I'm 
+
+going to build as far as the UI components are concerned. 
+
+I just need to get a rough draft done now and then polish 
+
+things up later. 
+
+Once that is done then I can focus on Creating the api 
+connection and then filtering the queries and then 
+
+I can focus on cleansing and aggregating the data 
+and then rendering it to the UI and then I can focus on setting 
+up the smtp server and sending emails with the details. 
+
+The data cleansing and aggregation is when I'll focus on rendering 
+out the right information and organizing the details 
+so that I can easily render all the relevant information 
+both to the UI and on the email. 
+
+Okay so that sounds good so far. 
+
+I just need to quickly get this UI done and then start on the api 
+section. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
