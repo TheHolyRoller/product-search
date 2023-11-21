@@ -90,6 +90,55 @@ section.
 
 
 
+Input button types: 
+
+
+Types of Search Parameters: 
+1. Price Range Two Text Inputs 
+2. Brands Drop Down check box menu 
+3. Age Two Calendar Selectors 
+4. Distance Range Slider 
+5. Condition Drop down check box menu with the option for any type of condition. 
+
+Okay so it looks like everything will be a drop down menu 
+except the price range that will be a text input and it will 
+
+be two text input boxes side by side. 
+
+This I can fit in the first button. I will make both text 
+boxes small enough to both fit in with padding. 
+
+Okay and then we have the brands this can be a drop down menu but it will 
+be a drop down menu with check boxes. You can check each box or you can check 
+one box that will select all the available brands. 
+
+And then this will be applied to the JSON search parameters. 
+
+
+Then there is the age and it can either be with the number of years or it 
+can be with dates. 
+
+To start out it will be with a date so a year drop down menu where you can 
+
+select the earliest year of production that you want to see and then you 
+can select the latest year of production that you want to see. 
+
+Okay so that's all good and well I'll probably have to have some sort 
+of calendar to select the early and later dates of production. 
+
+Next we have the distance range. 
+
+This can be a slider and the user can select the max distance range that he 
+wants to get results at. 
+
+
+Then we have the condition and this can be another drop down 
+
+menu with all the possible selections. There can also be the option 
+to select any condition so as to widen the search result. 
+
+
+
 
 
 

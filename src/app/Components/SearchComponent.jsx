@@ -2,17 +2,23 @@
 import React from 'react'
 import sc from '../Styles/SearchComponent.module.css'; 
 
+
+
+
 function SearchComponent() {
   return (
     <div id={sc.mainContainer}>
     <div id={sc.subContainer} >
     
     <div id={sc.componentContainer} >
+    <form id={sc.formContainer} >
+    
     
     
     <div id={sc.titleContainer} >
     <div id={sc.titleSection} >
     
+    Search for Deals 
     
     
     
@@ -32,14 +38,24 @@ function SearchComponent() {
     
     
     {/* Add in the button here  */}
-    <button>
-
-        Find a deal 
-        
-        
-
-    </button>
+    {/* Add in two input text buttons  */}
     
+    <div id={sc.maxButtonContainer} >
+    <input type='text' id={sc.minInput} label='minPrice' placeholder='min' /> 
+    
+
+    </div>
+    <span id={sc.toSpan} >
+    to
+    </span>
+    
+    
+    <div id={sc.minButtonContainer} >
+    
+    <input type='text' id={sc.maxInput} label='maxPrice' placeholder='max' /> 
+
+    
+    </div>    
     
     </div>
     <div id={sc.buttonContainer} >
@@ -104,7 +120,7 @@ function SearchComponent() {
     {/* Add in the button here  */}
     <button>
 
-        Find a deal 
+        Submit 
         
 
     </button>
@@ -120,6 +136,7 @@ function SearchComponent() {
     
     </div>
     
+    </form>
 
     </div>
 

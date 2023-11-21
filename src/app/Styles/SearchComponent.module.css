@@ -1,0 +1,270 @@
+#mainContainer{
+
+
+outline: 4px solid lime; 
+position: relative; 
+
+    
+    
+}
+
+
+#subContainer{
+
+width: 90vw; 
+margin: 0 auto; 
+position: relative;
+
+
+
+}
+
+
+#componentContainer{
+
+    outline: 5px solid blue; 
+    width: 72vw;
+    max-width: 68.75rem; 
+    margin: 0 auto; 
+    display: grid; 
+    place-content: center; 
+    
+    
+}
+
+#titleContainer{
+    
+    outline: 5px solid red; 
+    font-size: clamp(1rem, 2vw + 1rem, 3.2rem) !important; 
+    font-weight: 700;
+    margin: 0 auto; 
+    width: max-content; 
+    padding: 1.2rem; 
+
+}
+
+#titleSection{
+
+    
+    
+}
+
+/* Button Area  */
+
+
+#buttonAreaContainer{
+
+width: 73vw; 
+position: relative; 
+
+    
+}
+
+#buttonArea{
+    
+    
+    outline: 4px solid lime; 
+    margin: 0 auto !important; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem; 
+    
+    
+}
+
+#buttonContainer{
+    
+    outline: 3px solid red; 
+    width: 21.94vw; 
+    min-width: 13.125rem; 
+    min-height: 3.625rem !important;
+    padding: 1rem; 
+    margin: 1rem auto; 
+    display: flex; 
+    place-items: center;
+        border-radius: 10px; 
+
+    
+}
+
+#toSpan{
+    
+    
+    font-weight: 900;
+    
+    
+}
+
+#minButtonContainer{
+
+
+    display: inline-block !important;
+    vertical-align: middle !important;
+    
+    outline: 2px solid lime; 
+    margin: 0 auto; 
+    
+    
+}
+
+
+#minInput{
+    
+    outline: 2px solid lime; 
+    width:5.625rem !important; 
+    margin: 0.4rem;
+    
+    display: inline-block !important;
+    vertical-align: middle !important;
+    
+
+}
+
+
+
+#maxButtonContainer{
+    
+
+    display: inline-block !important;
+    vertical-align: middle !important;
+    
+    outline: 2px solid lime; 
+    margin: 0 auto; 
+    
+}
+
+#maxInput{
+    
+    outline: 2px solid lime; 
+    width:5.625rem !important;
+    margin: 0.4rem; 
+    
+    display: inline-block !important;
+    vertical-align: middle !important;
+    
+    
+}
+
+
+
+
+#searchButton{
+
+
+    
+}
+
+
+/* Add in the rest of the classes here */
+
+/* Add in the media queries here  */
+
+@media(max-width: 1020px) and (min-width: 775px) {
+
+#buttonAreaContainer{
+    
+    width: 90vw; 
+    outline: 14px solid red !important;
+    
+}
+    
+}
+
+
+@media(max-width: 775px){
+
+    #buttonArea{
+        
+        grid-template-columns: 1fr;
+        
+    }
+    
+    /* Change the width of the buttons here  */
+    #buttonContainer{
+    
+        outline: 3px solid red; 
+        width: 60vw; 
+        
+        min-width: 13.125rem; 
+
+        min-height: 3.625rem !important;
+        padding: 1rem; 
+        margin: 1rem auto; 
+    
+        
+    }
+    
+    /* Center everything here  */
+    
+    
+    
+    /* Change the width of the main container here  */
+    
+    
+    
+}
+
+
+
+/* Add in the container queries here  */
+
+
+/* Add in the user preference queries here  */
+
+
+/* Add in the orientation queries here  */
+
+
+
+/* Add in the effects here  */
+
+
+/* Add in the animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
