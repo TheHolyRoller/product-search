@@ -87,23 +87,15 @@ const [maxPrice, setMaxPrice] = useState("");
     
     </div>
     <div id={sc.buttonContainer}  >
-    
-
-
     <RangeDatePicker/> 
     
     </div>
     <div id={sc.buttonContainer} >
-    
-    
-    {/* Add in the button here  */}
-    <DropDown/> 
 
-    
+    <DropDown/> 
     
     </div>
     <div id={sc.buttonContainer} >
-      
       
     <Slider/> 
 

@@ -58,6 +58,7 @@ export default function MultipleSelect() {
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-name-label">Name</InputLabel>
         <Select
+        style={{background: 'white'}}
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
           multiple

@@ -42,6 +42,8 @@ export default function DropDown() {
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
     );
+    
+    console.log(personName)
   };
 
   return (
@@ -49,6 +51,8 @@ export default function DropDown() {
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Tag</InputLabel>
         <Select
+        style={{background: 'white'}}
+        
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
