@@ -1,3 +1,5 @@
+
+'use client'
 import * as React from 'react';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
@@ -6,7 +8,7 @@ import FormControl from '@mui/material/FormControl';
 import ListItemText from '@mui/material/ListItemText';
 import Select from '@mui/material/Select';
 import Checkbox from '@mui/material/Checkbox';
-
+ 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -31,7 +33,7 @@ const names = [
   'Kelly Snyder',
 ];
 
-export default function DropDown() {
+export default function DropDown(props) {
   const [personName, setPersonName] = React.useState([]);
 
   const handleChange = (event) => {
@@ -43,7 +45,10 @@ export default function DropDown() {
       typeof value === 'string' ? value.split(',') : value,
     );
     
-    console.log(personName)
+    console.log(personName);
+    
+    props.onSelect(value);
+
   };
 
   return (

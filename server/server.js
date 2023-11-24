@@ -1,4 +1,6 @@
-equire('dotenv').config();
+
+
+require('dotenv').config();
 
 // Import the express library
 const express = require('express');
@@ -38,10 +40,11 @@ const createFilter = (data) => {
 };
 
 // Define a route to handle the POST request from the UI component
-app.post('/api', (req, res) => {
+app.post('/server', (req, res) => {
   try {
     // Get the data from the request body
     const data = req.body;
+    console.log(data)
     // Create the filter string from the data
     const filter = createFilter(data);
     // Construct the Facebook API endpoint for getting products with the filter parameter
@@ -52,11 +55,16 @@ app.post('/api', (req, res) => {
       .then((response) => {
         // Get the data from the response
         const data = response.data;
+        console.log(data)
+        console.log(response.data); 
+        console.log('this worked out')
+        
         // Send back the data as JSON
         res.status(200).json(data);
       })
       .catch((error) => {
         // Send back an error message
+        console.log('this did not work out')
         res.status(500).json({ message: error.message });
       });
   } catch (error) {
@@ -127,12 +135,13 @@ setInterval(() => {
     distance: Math.floor(Math.random() * 50),
   };
   // Log the data
-  console.log(`Generated data: ${JSON.stringify(data)}`);
+  // console.log(`Generated data: ${JSON.stringify(data)}`);
   // Call the handleData function with the data
   handleData(data);
 }, 5000);
 
 // Start the app
 app.listen(5000, () => {
-  console.log('App listening on port 3000');
+  console.log('App listening on port 5000');
 });
+  

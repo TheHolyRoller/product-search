@@ -1,4 +1,5 @@
 'use client'
+
 import {useState, useEffect, useCallback, useRef} from 'react'
 import sc from '../Styles/SearchComponent.module.css'; 
 import Dropdown from '../Components/Dropdown'; 
@@ -6,8 +7,9 @@ import MuiDropDown from '../Components/MuiDropDown';
 import RangeDatePicker from '../Components/RangeDatePicker'; 
 import Slider from '../Components/DiscreteSlider'; 
 import ConditionSelector from '../Components/ConditionSelector'; 
-
+import axios from 'axios';
 import DropDown from '../Components/Dropdown'; 
+
 
 
 
@@ -31,6 +33,43 @@ const [minPrice, setMinPrice] = useState("");
 const [maxPrice, setMaxPrice] = useState(""); 
 
 
+// Add in the Send data function here 
+const data = {
+  name: "Alice",
+  age: 25,
+  hobbies: ["reading", "writing", "coding"],
+};
+
+function sendData() {
+  // Use axios to send a post request to the backend server
+  
+  console.log('trying to send data')
+  axios
+    .post("http://localhost:5000/server", data)
+    .then((response) => {
+      // Do something with the response
+      // For example, alert the response data
+      alert(JSON.stringify(response.data));
+      console.log('data send'); 
+      
+    })
+    .catch((error) => {
+      // Handle the error
+      // For example, alert the error message
+      alert(error.message);
+      alter("this DID NOT WORK")
+      console.error("this did not work")
+    });
+}
+
+
+function handleSelect(value) {
+  // Update the input state variable with the selected value
+  setInput(value);
+
+  // Do anything else you want with the selected value
+  // For example, send it to the server or display it on the web page
+}
 
 
   return (
@@ -91,8 +130,8 @@ const [maxPrice, setMaxPrice] = useState("");
     
     </div>
     <div id={sc.buttonContainer} >
-
-    <DropDown/> 
+     
+    <DropDown onSelect={handleSelect} /> 
     
     </div>
     <div id={sc.buttonContainer} >
@@ -114,7 +153,9 @@ const [maxPrice, setMaxPrice] = useState("");
     
     
     {/* Add in the button here  */}
-    <button>
+    
+    {/* add in a on Click event handler here  */}
+    <button onClick={sendData} >
 
         Submit 
         
